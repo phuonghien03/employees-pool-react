@@ -14,16 +14,16 @@ git clone https://github.com/phuonghien03/employees-pool-react.git
 
 3. cd to repository folder
 ```
-cd react-js-pj1
+cd employees-pool-react
 ```
 
 4. Install the dependencies.
 ```
-npm install or yarn install
+npm install OR yarn install
 ```
 5. Start project
 ```
-npm start or yarn start
+npm start OR yarn start
 ```
 
 ## Runs the app in the development mode.
