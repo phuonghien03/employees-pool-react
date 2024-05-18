@@ -67,7 +67,6 @@ const Login = ({ users, setAuthUser, history, location }) => {
                     content="Login"
                     primary
                     fluid
-                    data-testid="submit"
                     disabled={disabled}
                   />
                 </Form>

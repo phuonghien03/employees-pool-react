@@ -1,7 +1,7 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import { legacy_createStore as createStore, combineReducers, applyMiddleware } from "redux";
 import users from "./reducers/users";
 import questions from './reducers/questions' 
-import thunk from 'redux-thunk';
+import {thunk} from 'redux-thunk';
 import authUser  from "./reducers/authUser";
 
 const rootReducer = combineReducers({
@@ -12,5 +12,4 @@ const rootReducer = combineReducers({
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
-// Exports
 export { store };
