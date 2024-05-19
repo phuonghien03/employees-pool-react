@@ -67,6 +67,7 @@ const NewPoll = ({ authUser, questions, users, updateQuestions, updateUsers, his
                   placeholder="Option 1"
                   value={optionOne}
                   onChange={onChangeText1}
+                  data-testid="first-option"
                 />
                 <Divider horizontal>Option 2</Divider>
                 <Input
@@ -75,6 +76,7 @@ const NewPoll = ({ authUser, questions, users, updateQuestions, updateUsers, his
                   placeholder="Option 2"
                   value={optionTwo}
                   onChange={onChangeText2}
+                  data-testid="second-option"
                 />
                 <br />
                 <Button primary fluid>

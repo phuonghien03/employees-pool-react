@@ -170,6 +170,9 @@ function formatQuestion({ optionOneText, optionTwoText, author }) {
 
 export function _saveQuestion(question) {
   return new Promise((res, rej) => {
+    if (!question?.optionOneText || !question?.optionTwoText || !question?.author) {
+      rej("Please provide 2 answers of the question and its author")
+    }
     const formattedQuestion = formatQuestion(question);
 
     setTimeout(() => {
@@ -184,6 +187,10 @@ export function _saveQuestion(question) {
 
 export function _saveQuestionAnswer({ authedUser, qid, answer }) {
   return new Promise((res, rej) => {
+    if (!authedUser || !qid || !answer) {
+      rej("Please provide the answer, user and question id");
+    }
+
     setTimeout(() => {
       users = {
         ...users,

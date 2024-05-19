@@ -40,7 +40,7 @@ const Login = ({ users, setAuthUser, history, location }) => {
             <Grid.Row>
               <Grid.Column width={16}>
                 <Form onSubmit={onSubmit}>
-                  <Header as="h2" color="blue">
+                  <Header as="h2" color="blue" data-testid="login-heading">
                     Sign In
                   </Header>
                   <Form.Dropdown
@@ -65,6 +65,7 @@ const Login = ({ users, setAuthUser, history, location }) => {
                   />
                   <Form.Button
                     content="Login"
+                    data-testid="submit"
                     primary
                     fluid
                     disabled={disabled}
